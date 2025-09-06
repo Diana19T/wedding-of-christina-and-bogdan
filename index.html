@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bg-music" muted loop>
+      <source src="music/alex-warren-ordinary.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      const audio = document.getElementById('bg-music');
+      audio.play().catch(()=>{ /* тихо ігноруємо */ });
+      const unlock = () => {
+      audio.muted = false;
+      audio.volume = 0.5;      // не оглушай гостей
+      audio.play().catch(()=>{});
+      ['click','touchstart','keydown','scroll'].forEach(ev =>
+      window.removeEventListener(ev, unlock, {passive:true})
+      );
+      };
+      ['click','touchstart','keydown','scroll'].forEach(ev =>
+      window.addEventListener(ev, unlock, {passive:true})
+      );
+    </script>
+    <div class="iphone">
+      <div class="div">
+        <div class="overlap">
+          <img
+            class="image"
+            src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/---------------1.svg"
+          />
+          <p class="text-wrapper">ХОЧУ БУТИ З ТОБОЮ ЛИШ ДВА РАЗИ</p>
+          <div class="text-wrapper-2">зараз і назавжди</div>
+          <div class="text-wrapper-3">WEDDING</div>
+          <div class="text-wrapper-4">01/11/2025</div>
+          <img
+            class="img"
+            src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/--------------.svg"
+          />
+          <div class="element">
+            <img
+              class="IMG"
+              src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/img-6797-1.png"
+            />
+          </div>
+          <div class="IMG-wrapper">
+            <img
+              class="IMG-2"
+              src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/img-6803-1.png"
+            />
+          </div>
+          <div class="view">
+            <div class="text-wrapper-5">(</div>
+            <div class="text-wrapper-6">)</div>
+          </div>
+          <p class="p">
+            Цей день стане початком нашої нової історії, і ми хочемо розділити
+            його з вами
+          </p>
+          <div class="text-wrapper-7">весілля</div>
+          <div class="text-wrapper-8">вас на наше</div>
+          <div class="text-wrapper-9">апрошуємо</div>
+          <div class="text-wrapper-10">З</div>
+
+          <div class="img-wrapper">
+            <img src="pics/mainphoto.png" />
+          </div>
+        </div>
+        <div class="overlap-group-wrapper">
+          <video controls autoplay muted loop playsinline fixed>
+            <source src="https://github.com/Diana19T/wedding/raw/refs/heads/main/video/My-video.mp4" type="video/mp4" />
+          </video>
+          <div class="text-wrapper-11">Waiting for you</div>
+        </div>
+        <div class="overlap-2">
+          <img
+            class="vector"
+            src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/vector.svg"
+          />
+          <div class="view-2">
+            <div class="text-wrapper-12">13:30 - ЦЕРЕМОНІЯ</div>
+            <p class="text-wrapper-13">
+              тут ми скажемо одне одному найважливіші слова
+            </p>
+          </div>
+          <div class="view-3">
+            <div class="text-wrapper-14">13:00 - ЗУСТРІЧ У РЕСТОРАНІ</div>
+            <p class="text-wrapper-15">
+              після церемонії ми чекаємо всіх у ресторані Маяк
+            </p>
+          </div>
+          <div class="view-4">
+            <a
+              href="https://maps.app.goo.gl/v9hxNU9THhmwstWW9"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="text-wrapper-16">11:00 - РАЦС</div></a
+            >
+            <p class="text-wrapper-17">
+              урочисте «так» і початок нашої спільної історії
+            </p>
+          </div>
+          <div class="text-wrapper-18">РОГРАМА <br />&nbsp;&nbsp;ДНЯ</div>
+          <div class="image-2">П</div>
+        </div>
+        <div class="overlap-3">
+          <div class="view-5">
+            <p class="text-wrapper-19">
+              в день, коли ми почнемо новий розділ нашої історії!
+            </p>
+            <div class="text-wrapper-20">01. 11</div>
+            <div class="text-wrapper-21">13:00</div>
+            <img
+              class="line"
+              src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/line-7.svg"
+            />
+            <img
+              class="line-2"
+              src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/line-7.svg"
+            />
+          </div>
+          <div class="text-wrapper-22">
+            &nbsp;&nbsp;&nbsp;&nbsp; О<br />&nbsp;&nbsp;ЗУСТРІЧІ
+          </div>
+          <div class="image-3">Д</div>
+        </div>
+        <p class="text-wrapper-23">
+          Просимо гостей обрати вбрання з українськими мотивами:<br />
+          вишиванка, етнічні елементи чи аксесуари.
+        </p>
+        <div class="overlap-4">
+          <div class="text-wrapper-24">РЕС <br />&nbsp;&nbsp;КОД</div>
+          <div class="image-4">Д</div>
+        </div>
+        <div class="view-6">
+          <div class="text-wrapper-25">Локація</div>
+          <div class="view-7">
+            <div class="text-wrapper-26">Ресторан<br />Маяк</div>
+            <div class="text-wrapper-27">01. 11</div>
+            <div class="text-wrapper-28">13:00</div>
+          </div>
+          <div class="div-wrapper">
+            <a
+              href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%8F%D0%BA/@50.4264594,30.5881721,16z/data=!4m6!3m5!1s0x40d4cf4c626dd52b:0xf071d5efff11b7d4!8m2!3d50.4264592!4d30.5911776!16s%2Fg%2F11f8jh22zv?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="text-wrapper-29">переглянути карту</div></a
+            >
+          </div>
+          <p class="div-2">
+            <span class="span">АДРЕСА:М.КИІВ,ВУЛ. </span>
+            <span class="span">ДНІПРОВСЬКА НАБЕРЕЖНА</span>
+          </p>
+          <img
+            class="line-3"
+            src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/line-6.svg"
+          />
+          <div class="view-8">
+            <img
+              class="IMG-4"
+              src="https://c.animaapp.com/mf7z3wy1fVSFLt/img/img-1508-1.png"
+            />
+          </div>
+        </div>
+        <div class="overlap-5">
+          <div class="wedding-day">WEDDING DAY</div>
+          <div class="text-wrapper-30">
+            Богдан&nbsp;&nbsp;і&nbsp;&nbsp; Кристина
+          </div>
+        </div>
+        <div class="view-9">
+          <div class="view-10"></div>
+          <div class="view-11"></div>
+          <div class="view-12"></div>
+          <div class="view-13"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
